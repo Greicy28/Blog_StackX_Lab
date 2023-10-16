@@ -1,0 +1,737 @@
+*{ 
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+
+.cabecalho{
+background:linear-gradient(black,rgb(184, 61, 61));
+z-index: -1;
+padding: 10px;
+}
+
+.Titulo{
+background:linear-gradient(rgb(226, 226, 235), rgb(238, 74, 74) );
+-webkit-background-clip: text;
+background-clip:text;
+-webkit-text-fill-color: transparent;
+font-size: 50px;
+position: relative;
+top: 15px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.cards{
+display: flex;
+justify-content: space-around;
+padding: 30px;
+
+}
+
+
+  
+
+.card1{
+box-shadow: 1px 1px 1px 1px black;
+background: #fff;
+width: 200px;
+height: 300px;
+
+}
+
+.card2{
+    box-shadow: 1px 1px 1px 1px black;
+    background: #fff;
+    width: 200px;
+    height: 300px;
+}
+
+.card3{
+    box-shadow: 1px 1px 1px 1px black;
+     background: #fff;
+     width: 200px;
+     height: 300px;
+
+}
+ 
+.card4{
+    box-shadow: 1px 1px 1px 1px black;
+   background: #fff;
+ width: 200px;
+   height: 300px;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 500px;
+    margin-left: 10px;
+    padding: 10px;
+ cursor: pointer;
+    
+}
+
+
+
+.menu:hover{
+    color: rgb(235, 120, 120);
+
+}
+
+.img1{  
+height: 100px;
+position: relative;
+bottom: 18px;
+width: 200px;
+}
+
+.img2{ 
+height: 100px;
+width: 200px;
+position: relative;
+bottom: 18px;
+}
+    
+.img3{
+    width: 200px;
+    position: relative;
+    bottom: 18px;
+    height: 100px;
+}
+
+.img4{
+    width: 200px;
+    position: relative;
+    bottom: 18px;  
+    height: 100px;
+}
+
+
+
+.cardtexto{
+    position: relative;
+    bottom: 120px;
+    color: rgb(93, 91, 241);
+    left: 10px;
+}
+
+.cardtexto2{
+position: relative;
+bottom: 130px;
+color: rgb(93, 91, 241);
+left: 10px;
+}
+
+.cardtexto3{
+position: relative;
+bottom: 130px;
+color: rgb(93, 91, 241);
+left: 10px;
+}
+
+.cardtexto4{
+    bottom:130px;
+position: relative;
+color: rgb(93, 91, 241);
+left: 10px;
+}
+
+.cardtexto,.cardtexto2,.cardtexto3,.cardtexto4{
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.paragrafo1{
+font-size: 11px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 10px;
+text-align: justify;
+width: 170px;
+position: relative;
+left: 12px;
+top: 20px;
+}
+
+.paragrafo2{
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px; 
+    text-align: justify;
+width: 170px;
+position: relative;
+left: 12px;
+top:20px;
+}
+
+.paragrafo3{
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px;
+    text-align: justify;
+width: 170px;
+position: relative;
+left: 12px;
+top:20px;
+}
+
+.paragrafo4{
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px;
+    text-align: justify;
+    width: 160px;
+    position: relative;
+    left: 20px;
+    top:20px; 
+    
+}
+
+.conteudoprincipal{
+    color:black;
+    font-size:20px; 
+    text-align: justify;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+width: 600px;
+position: relative;
+left: 30%;
+}
+
+
+
+.rodapé{
+    position: static;
+    background:linear-gradient(black,rgb(184, 61, 61)); ;
+    height: 80px; 
+    font-size: 15px;
+width: 100%;
+bottom: 0;
+left: 0;
+}
+
+.textofinal{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pro{    
+font-size: 11px;
+color: rgb(93, 91, 241);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 80px;
+position: relative;
+top: 282px;
+left: 10px;
+}
+
+.int{
+
+font-size: 11px;
+color: rgb(93, 91, 241);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 140px;
+position: relative;
+top: 282px;
+left: 10px;
+}
+
+.big{
+font-size: 11px;
+color: rgb(93, 91, 241);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 80px;
+position: relative;
+top: 282px;
+left: 10px;
+}
+
+.SI{
+
+font-size: 11px;
+color: rgb(93, 91, 241);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 140px;
+position: relative;
+top: 282px;
+left: 10px;
+}
+
+
+.olho{
+position: relative;
+height: 16px;
+bottom: 138px;
+left: 150px;
+cursor: pointer;
+
+}
+
+.olho2{
+position: relative;
+height: 16px;
+bottom: 148px; 
+left: 150px; 
+cursor: pointer;
+}
+
+.olho3{
+position: relative;
+height: 16px;
+bottom: 148px; 
+left:150px;
+cursor: pointer;
+}
+
+.olho4{
+position: relative;
+height: 16px;
+bottom: 147px; 
+left: 150px; 
+cursor: pointer;
+}
+
+#contador{
+position: relative;
+    left: 85%;
+font-size: 12px;
+bottom: 170px;
+width: 20px;
+}
+
+#contador2{
+    position: relative;
+    left: 85%;
+font-size: 12px;
+bottom: 180px;
+width: 20px;
+}
+
+#contador3{
+    position: relative;
+    left: 85%;
+font-size: 12px;
+bottom: 180px;
+width: 20px;
+}
+
+#contador4{
+    position: relative;
+    left: 85%;
+font-size: 12px;
+bottom: 180px;
+width: 20px;
+}
+
+#data{
+    font-size: 12px;
+position: relative;
+width: 60px;
+left: 140px;
+bottom: 14px;
+}
+
+#data2{
+width: 60px;
+position: relative;
+left: 140px;
+font-size: 12px;
+bottom: 14px;
+}
+
+
+#data3{
+    width: 60px;
+    font-size: 12px;
+position: relative;
+left: 140px;
+bottom: 14px;
+}
+
+
+#data4{
+    width: 60px;
+    font-size: 12px;
+position: relative;
+left: 144px;
+bottom:15px;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    .cards{
+           flex-direction:column;   
+   align-items: center;
+   }
+   
+   .card1,.card2,.card3,.card4{
+   margin-bottom: 15px;
+   
+   }
+   
+   .rodapé{
+      position:static;
+      bottom:0;
+      
+   }
+   
+   .paragrafo1{
+   position: relative;
+   top: -120px;
+   }
+   
+   .paragrafo2{
+    position: relative;
+    top: -120px;
+       
+}
+   
+   .paragrafo3{
+       position: relative;
+       bottom: 0%;
+   }
+   .paragrafo4{
+   position: relative;
+   bottom: 0%; 
+   }
+   
+   .conteudoprincipal{
+       display: none;
+   }
+   
+   #data{
+       position: relative;
+       bottom: 105px;
+       
+   }
+   #data2{
+       position: relative;
+       bottom: 115px;
+   }
+   #data3{
+       position: relative;
+       bottom: -15px;
+       right: 1%;
+   }
+   #data4{
+       position: relative;
+       right: 6%;
+       bottom: -12px;
+   }
+   .img1{
+       margin-bottom: 65%;
+       margin-right: 4%;
+   }
+   .img2{
+       margin-bottom: 65%;
+       margin-right: 4%;
+   }
+   .img3{
+       position: relative;
+       bottom:5%;
+   }
+   .img4{
+       position: relative;
+       bottom: 5%;
+   }
+   .big{
+       position: relative;
+   }
+   .SI{
+       position: relative;
+   right: 30%;
+   bottom: 10px;
+   }
+
+   
+   .cardtexto{
+       position: relative;
+       bottom:250px;
+   }
+   
+   .cardtexto2{
+   position: relative;
+   bottom: 250px;
+   }
+   .cardtexto3{
+    position: relative;
+    bottom:110px ;
+   }
+   .cardtexto4{
+    position: relative;
+    bottom:110px ;
+   }
+   .olho{
+   position: relative;
+   bottom:268px ; 
+   }
+   .olho2{
+   position: relative;
+   bottom:268px ; 
+   }
+   .olho3{
+    position: relative; 
+    bottom:126px ;
+   }
+    .olho4{
+    position: relative; 
+    bottom:126px ;   
+    }
+   #contador{
+       position: relative;
+       right: 8%;
+       top:-300px ;
+   }
+   
+   #contador2{
+       position: relative;
+       right: 8%;
+       top:-300px ;
+   }
+   #contador3{
+    position: relative;
+       right: 8%;
+       top:-160px ;
+   }
+   #contador4{
+       position: relative;
+       right: 8%;
+       top:-160px ;
+   }
+   .menu{
+       font-size: 60%;
+       position: static;
+      width:300px ;
+   
+}
+
+#men,#menu1,#menu2,#menu3,#menu4{
+    position: relative;
+    left: -10px;
+    top: 9px;
+
+}
+
+}
+   
+   @media (min-width:769px) and (max-width:1200px){
+   .conteudoprincipal{
+   position: relative;
+   font-size: 100%;
+   text-align: justify;
+   width: 80%;
+   left: 20px;
+   top:500px;
+   }
+   .rodapé{
+       position:fixed;
+       bottom: 0;
+   }
+   .img1{
+       position: relative;
+       bottom:18px;
+   right: 1%;
+   width: 187px;
+height: 110px;   
+}
+   
+   .img2{
+       position: relative;
+   bottom:  18px;
+   right: 1%;
+   width: 187px;
+   height: 110px;   
+
+   }
+   .img3{
+       position: relative;
+       bottom: 18px;
+       right: 1%;
+       width: 187px;
+       height: 110px;  
+   }
+   .img4{
+       position: relative;
+       bottom:18px ;
+       left: 0.5%;
+       width: 187px;
+       height: 110px;  
+   }
+   
+   .card1,.card2,.card3,.card4{
+       margin-right: 8px;
+       width: 184px;
+   }
+   
+   .cardtexto{
+       position: relative;
+       bottom: 110px;
+       
+   }
+   .cardtexto2{
+       position: relative;
+       top:-120px;
+   }
+   
+   .cardtexto3{
+   position: relative;
+   bottom:120px;
+   }
+   
+   .cardtexto4{
+       position: relative;
+       top: -125px;
+   }
+   
+   .paragrafo1{
+       position: relative;
+       top: 20px;
+       text-align: left;
+       
+       
+   }
+   .paragrafo2{
+       position: relative;
+       top: 20px;
+       right: 6%;
+       text-align: left;
+   }
+   .paragrafo3{
+       position: relative;
+       top: 20px;
+       right: 6%;
+   text-align: left;
+    }
+   
+   .paragrafo4{
+       position: relative;
+       top: 20px;
+   right: 6%;
+text-align: left;   
+}
+   .pro{
+       position: relative;
+       
+   }
+   .int{
+       position: relative;
+       
+   }
+   .big{
+       position: relative;
+       bottom: 1%;
+       right: 6%;
+   }
+   .SI{
+       position: relative;
+       bottom: 1%;
+       right: 38%;
+   }
+   #data{
+       position: relative;
+       left: 65%;
+       top: 5%;
+   }
+   #data2{
+       position: relative;
+       top: 2%;
+       left: 65%;
+   }
+   #data3{
+       position: relative;
+       top: 2%;
+       left: 65%;
+   }
+   #data4{
+       position: relative;
+       bottom: 3%;
+       left: 65%;
+   }
+   .olho{
+       position: relative;
+       bottom: 127px;
+   left: 140px;
+   }
+   .olho2{
+       position: relative;
+       bottom: 136px;
+   left: 140px;
+   }
+   .olho3{
+       position: relative;
+       bottom: 138px;
+       left: 140px;
+   }
+   .olho4{
+   position: relative;
+   bottom:140px;
+   left: 140px;
+   }
+   #contador{
+       position: relative;
+       bottom:160px;
+   left: 87%;
+   }
+   #contador2{
+       position: relative;
+       bottom: 169px;
+       left: 87%;
+   }
+   #contador3{
+       position: relative;
+       bottom: 172px;
+       left: 87%;
+   }
+   #contador4{
+       position: relative;
+       bottom: 174px;
+       
+       
+   }
+   .cardtexto{
+       position: relative;
+       right: 7%;
+   }
+   .cardtexto2{
+       position: relative;
+       right: 7%;
+       bottom: 9%;
+   }
+   
+   .cardtexto3{
+       position: relative;
+       right: 7%;
+   }
+   
+   .cardtexto4{
+       position: relative;
+       right: 7%;
+       bottom: 5%;
+   }
+   
+   .conteudoprincipal{
+      position: absolute;
+       width: 80%;
+   text-align: justify;
+   top: 80%;
+   font-size: 15px;
+   height: 60%;
+   padding-top: 7%;
+   left: 7%;
+   }
+
+
+   .menu{
+    position: relative;
+    left: 10px;
+    top: 10px;
+   }
+   }
