@@ -1,511 +1,736 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BitZone</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/Imagens/favicon-32x32.png">  
-</head>
-<body>
-    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Imagens/favicon-32x32.png"
+    />
+  </head>
+  <body>
     <style>
-*{ 
-    margin: 0;
-    padding: 0;
-}
-
-.cabecalho{
-background:linear-gradient(black,rgb(184, 61, 61));
-z-index: -1;
-padding: 10px;
-
-
-}
-
-.Titulo{
-background:linear-gradient(rgb(226, 226, 235), rgb(238, 74, 74) );
--webkit-background-clip: text;
-background-clip:text;
--webkit-text-fill-color: transparent;
-font-size: 50px;
-position: relative;
-top: 15px;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.menu{
-    color: white;
-    text-decoration: none;
-    position: relative;
-    left: 500px;
-    margin-left: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.menu:hover{
-    color: rgb(235, 120, 120);
-}
-
-.rodapé{
-    position: relative;
-    bottom: -224px;
-    background:linear-gradient(black,rgb(184, 61, 61));
-    height: 80px; 
-    font-size: 15px;
-}
-
-.textofinal{
-    position: relative;
-    text-align: center;
-    top: 40px;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#proimg{
-    border: solid 4px black;
-position: relative;
-left: 300px;
-width: 600px;
-bottom: 100px;
-}
-
-#IAimg{
-    border: solid 4px black;
-    position: relative;
-left: 300px;
-width: 600px;
-bottom: 150px;
-
-}
-
-#bigdataimg{
-    border: solid 4px black;
-    position: relative;
-left: 300px;
-width: 600px;
-bottom: 100px;
-
-}
-
-#segurançaimg{
-    border: solid 4px black;
-    position: relative;
-left: 300px;
-width: 600px;
-bottom: 500px;
-
-}
-
-.imagens{
-    position: relative;
-    left: 300px;
-    top: 20px;
-    width: 600px;
-height: 369.44px;
-}
-
-.imagem1{
-width: 600px;
-}
-
-.imagem2{
-    width: 600px;
-
-}
-
-.imagem3{
-    width: 600px;
-
-}
-
-.imagem4{
-    width: 600px;
-
-}
-
-.textosMenu{
-    position: relative;
-    top: 200px;
-width: 800px;
-left: 280px;
-}
-
-.textoMenu{
-    width: 800px;
-
-}
-
-#protexto{
-width: 700px;
-position: relative;
-top: 600px;
-left: 300px;
-
-}
-
-#IAtexto{
-    width: 700px;
-position: relative;
-top: 600px;
-left: 300px;
-}
-
-#bigdatatexto{
-    width: 700px;
-position: relative;
-top: 500px;
-left: 300px;
-}
-
-#segurançatexto{
-    width: 700px;
-position: relative;
-top: 600px;
-left: 300px;
-}
-
-.caracteres{
-    position:relative;
-width: 90px;
-top: 126px;
-left: 290px;
-
-}
-
-.caractere1{
-
-width:90px;
-position: relative;
-top: 15px;
-}
-
-.caractere2{
-width:90px ;
-} 
-
-.caractere3{
-width:90px ;
-}
-.caractere4{
-width:90px ;
-
-}
-
-.categorias{
-position:relative;
-width:90px ;
-top:48px;
-left:295px;
-}
-
-.categoria1{
-width:90px ;
-}
-.categoria2{
-width:90px ;
-white-space: nowrap;
-}
-.categoria3{
-width:90px ;
-}
-.categoria4{
-width:90px ;
-white-space: nowrap;
-}
-
-.datas{
-position: relative;
-width: 90px; 
-top:1px;
-left:700px;
-}
-
-.dat2{
-width:90px ;
-}
-
-.views{
-position: relative;
-width: 95px; 
-top:-100px;
-left:890px;
-}
-
-.views2{
-    position: relative;
-width: 95px; 
-top:-150px;
-left:895px;
-
-}
-
-.views3{
-    position: relative;
-width: 95px; 
-top:-120px;
-left:895px;
-
-}
-
-.views4{
-    position: relative;
-width: 95px; 
-top:-500px;
-left:800px;
-
-}
-
-.contagem{
-    width: 95px;
-}
-.contagem2{
-    width: 95px;
-}
-.contagem3{
-    width: 95px;
-}
-.contagem4{
-    width: 95px;
-}
-
-.v1{
-position: relative;
-width:40px ;
-left:800px;
-top: 4.2rem;
-}
-.visu2{
-width:40px ;
-position: relative;
-
-}
-
-.caracPro{
-    position: relative;
-    right: -300px;
-    top: -110px;
-    width: 80px;
-    height: 20px;
-}
-
-.caracIA{
-    position: relative;
-    bottom: 150px;
-    left: 295px;
-    width: 80px;
-}
-
-.caracBd{
-    position: relative;
-    bottom: 130px;
-    left: 300px;
-width: 80px;
-}
-
-.caracSi{
-position: relative;
-bottom: 507px;
-left: 300px;
-width: 90px;
-}
-
-.d1{
-    position: relative;
-    bottom: 470px;
-    left: 700px;
-width: 70px;
-}
-
-.d2{
-    width: 70px;
-position: relative;
-left: 800px;
-bottom: 90px;
-}
-
-.d3{
-    width: 70px;
-position: relative;
-left: 800px;
-bottom: 120px;
-}
-
-.d4{
-    width: 70px;
-position: relative;
-left: 800px;
-bottom: 90px;
-}
-
-.visualização1{
-    position: relative;
-    left: 790px;
-    width: 90px;
-bottom: 120px;
-}
-
-.visualização2{
-    position: relative;
-    left: 800px;
-    width: 90px;
-bottom: 170px;
-}
-
-.visualização3{
-    position: relative;
-    left: 800px;
-    width: 90px;
-    bottom: 140px;
-
-}
-
-.visualização4{
-    position: relative;
-    left: 700px;
-    width: 90px;
-bottom: 520px;
-}
-
-.vi{
-    position: relative;
-    left: 700px;
-    width: 90px;
-    top: 85px;
-}
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .cabecalho {
+        background: linear-gradient(black, rgb(184, 61, 61));
+        z-index: -1;
+        padding: 10px;
+      }
+
+      .Titulo {
+        background: linear-gradient(rgb(226, 226, 235), rgb(238, 74, 74));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        position: relative;
+        top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .menu {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        left: 500px;
+        margin-left: 10px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .menu:hover {
+        color: rgb(235, 120, 120);
+      }
+
+      .rodapé {
+        position: relative;
+        bottom: -224px;
+        background: linear-gradient(black, rgb(184, 61, 61));
+        height: 80px;
+        font-size: 15px;
+      }
+
+      .textofinal {
+        position: relative;
+        text-align: center;
+        top: 40px;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #proimg {
+        border: solid 4px black;
+        position: relative;
+        left: 300px;
+        width: 600px;
+        bottom: 100px;
+      }
+
+      #IAimg {
+        border: solid 4px black;
+        position: relative;
+        left: 300px;
+        width: 600px;
+        bottom: 150px;
+      }
+
+      #bigdataimg {
+        border: solid 4px black;
+        position: relative;
+        left: 300px;
+        width: 600px;
+        bottom: 100px;
+      }
+
+      #segurançaimg {
+        border: solid 4px black;
+        position: relative;
+        left: 300px;
+        width: 600px;
+        bottom: 500px;
+      }
+
+      .imagens {
+        position: relative;
+        left: 300px;
+        top: 20px;
+        width: 600px;
+        height: 369.44px;
+      }
+
+      .imagem1 {
+        width: 600px;
+      }
+
+      .imagem2 {
+        width: 600px;
+      }
+
+      .imagem3 {
+        width: 600px;
+      }
+
+      .imagem4 {
+        width: 600px;
+      }
+
+      .textosMenu {
+        position: relative;
+        top: 200px;
+        width: 800px;
+        left: 280px;
+      }
+
+      .textoMenu {
+        width: 800px;
+        line-height: 18px;
+      }
+
+      #protexto {
+        width: 700px;
+        position: relative;
+        top: 600px;
+        left: 300px;
+      }
+
+      #IAtexto {
+        width: 700px;
+        position: relative;
+        top: 600px;
+        left: 300px;
+      }
+
+      #bigdatatexto {
+        width: 700px;
+        position: relative;
+        top: 500px;
+        left: 300px;
+      }
+
+      #segurançatexto {
+        width: 700px;
+        position: relative;
+        top: 600px;
+        left: 300px;
+      }
+
+      .caracteres {
+        position: relative;
+        width: 90px;
+        bottom: -100px;
+        left: 298px;
+      }
+
+      .caractere1 {
+        width: 90px;
+        position: relative;
+        top: 15px;
+      }
+
+      .caractere2 {
+        width: 90px;
+      }
+
+      .caractere3 {
+        width: 90px;
+      }
+      .caractere4 {
+        width: 90px;
+      }
+
+      .categorias {
+        position: relative;
+        width: 90px;
+        bottom: -1px;
+        left: 298px;
+      }
+
+      .categoria1 {
+        width: 90px;
+      }
+      .categoria2 {
+        width: 90px;
+        white-space: nowrap;
+      }
+      .categoria3 {
+        width: 90px;
+      }
+      .categoria4 {
+        width: 90px;
+        white-space: nowrap;
+      }
+
+      .datas {
+        position: relative;
+        width: 90px;
+        bottom: 50px;
+        left: 700px;
+      }
+
+      .dat2 {
+        width: 90px;
+      }
+
+      .views {
+        position: relative;
+        width: 95px;
+        top: -100px;
+        left: 910px;
+      }
+
+      .views2 {
+        position: relative;
+        width: 95px;
+        top: -150px;
+        left: 920px;
+      }
+
+      .views3 {
+        position: relative;
+        width: 95px;
+        top: -120px;
+        left: 920px;
+      }
+
+      .views4 {
+        position: relative;
+        width: 95px;
+        top: -500px;
+        left: 820px;
+      }
+
+      .contagem {
+        width: 95px;
+      }
+      .contagem2 {
+        width: 95px;
+      }
+      .contagem3 {
+        width: 95px;
+      }
+      .contagem4 {
+        width: 95px;
+      }
+
+      .v1 {
+        position: relative;
+        width: 40px;
+        left: 820px;
+        bottom: -30px;
+      }
+      .visu2 {
+        width: 40px;
+        position: relative;
+      }
+
+      .caracPro {
+        position: relative;
+        right: -300px;
+        top: -110px;
+        width: 80px;
+        height: 20px;
+      }
+
+      .caracIA {
+        position: relative;
+        bottom: 150px;
+        left: 295px;
+        width: 80px;
+      }
+
+      .caracBd {
+        position: relative;
+        bottom: 130px;
+        left: 300px;
+        width: 80px;
+      }
+
+      .caracSi {
+        position: relative;
+        bottom: 507px;
+        left: 300px;
+        width: 90px;
+      }
+
+      .d1 {
+        position: relative;
+        bottom: 470px;
+        left: 700px;
+        width: 70px;
+      }
+
+      .d2 {
+        width: 70px;
+        position: relative;
+        left: 800px;
+        bottom: 90px;
+      }
+
+      .d3 {
+        width: 70px;
+        position: relative;
+        left: 800px;
+        bottom: 120px;
+      }
+
+      .d4 {
+        width: 70px;
+        position: relative;
+        left: 800px;
+        bottom: 90px;
+      }
+
+      .visualização1 {
+        position: relative;
+        left: 790px;
+        width: 90px;
+        bottom: 120px;
+      }
+
+      .visualização2 {
+        position: relative;
+        left: 800px;
+        width: 90px;
+        bottom: 170px;
+      }
+
+      .visualização3 {
+        position: relative;
+        left: 800px;
+        width: 90px;
+        bottom: 140px;
+      }
+
+      .visualização4 {
+        position: relative;
+        left: 700px;
+        width: 90px;
+        bottom: 520px;
+      }
+
+      .vi {
+        width: 90px;
+      }
+
+      .visualizações {
+        position: relative;
+        bottom: -47px;
+        left: 700px;
+        width: 90px;
+      }
+
+      /*Começo da parte responsiva*/
+
+      @media screen and (max-width: 768px) {
+        .imagem1,
+        .imagem2,
+        .imagem3,
+        .imagem4 {
+          width: 350px;
+        }
+
+        .imagem1 {
+          position: relative;
+          top: 60px;
+        }
+
+        .imagens {
+          position: absolute;
+          left: 10px;
+          top: 210px;
+          width: 350px;
+          height: 216px;
+        }
+
+        #proimg {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          bottom: 300px;
+        }
+
+        #IAimg {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          bottom: 200px;
+        }
+        #bigdataimg {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          bottom: 200px;
+        }
+
+        #segurançaimg {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          bottom: 700px;
+        }
+
+        #protexto {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          top: 600px;
+        }
+        #IAtexto {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          top: 600px;
+        }
+        #bigdatatexto {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          top: 600px;
+        }
+        #segurançatexto {
+          position: relative;
+          left: 10px;
+          width: 380px;
+          top: 600px;
+        }
+        .caracPro {
+          position: relative;
+          left: 10px;
+          top: -280px;
+        }
+        .caracIA {
+          position: relative;
+          left: 10px;
+          top: -230px;
+        }
+        .caracBd {
+          position: relative;
+          left: 10px;
+          top: -230px;
+        }
+        .caracSi {
+          position: relative;
+          left: 10px;
+          top: -730px;
+        }
+        .visualização1 {
+          position: relative;
+          left: 270px;
+          bottom: 300px;
+        }
+
+        .visualização2 {
+          position: relative;
+          left: 270px;
+          bottom: 235px;
+        }
+        .visualização3 {
+          position: relative;
+          left: 270px;
+          bottom: 235px;
+        }
+        .visualização4 {
+          position: relative;
+          left: 270px;
+          bottom: 750px;
+        }
+
+        .visualizações {
+          position: relative;
+          left: 200px;
+          top: 210px;
+          font-size: 11px;
+        }
+
+        .textosMenu {
+          left: 100px;
+          top: 500px;
+          font-size: 12px;
+          width: 200px;
+        }
+
+        .textoMenu,
+        .textoMenu2,
+        .textoMenu3,
+        .textoMenu4 {
+          width: 200px;
+        }
+
+        .datas {
+          left: 210px;
+          top: 185px;
+          font-size: 11px;
+        }
+
+        .v1 {
+          left: 285px;
+          top: 196px;
+          font-size: 11px;
+        }
+
+        .caracteres {
+          position: relative;
+          top: 404px;
+          left: 40px;
+          font-size: 11px;
+        }
+
+        .caractere4 {
+          position: relative;
+          top: -10px;
+        }
+
+        .caractere1 {
+          position: relative;
+          top: -10px;
+        }
+
+        .categorias {
+          position: relative;
+          top: 200px;
+          left: 40px;
+          font-size: 11px;
+        }
+
+        .categoria1 {
+          position: relative;
+          top: -40px;
+        }
+
+        .d4 {
+          position: relative;
+          left: 270px;
+          top: -260px;
+        }
+        .d1 {
+          position: relative;
+          left: 270px;
+          top: -700px;
+        }
+        .d2 {
+          position: relative;
+          left: 270px;
+          top: -180px;
+        }
+        .d3 {
+          position: relative;
+          left: 270px;
+          top: -180px;
+        }
+
+        .views {
+          position: relative;
+          left: 385px;
+          top: -280px;
+        }
+        .views2 {
+          position: relative;
+          left: 385px;
+          top: -216px;
+        }
+        .views3 {
+          position: relative;
+          left: 385px;
+          top: -215px;
+        }
+        .views4 {
+          position: relative;
+          left: 385px;
+          top: -730px;
+        }
+      }
+
+      /*Fim da parte responsiva*/
+
+      .textosMenu {
+        position: relative;
+      }
+      .caracteres {
+        position: relative;
+      }
+
+      .categorias {
+        position: relative;
+      }
+
+      .visualizações {
+        position: relative;
+      }
+
+      .datas {
+        position: relative;
+      }
+      .v1 {
+        position: relative;
+      }
+
+      .menu {
+        left: 210px;
+      }
+
+      .rodapé {
+        position: relative;
+        top: 550px;
+      }
     </style>
-    
-      
 
-<header class="cabecalho">
-        <h1 class="Titulo">BitZone</h1>
-        <a class="menu">Inicio</a>
-        
-    
-      </header> 
-      <div id="conteudo">
+    <header class="cabecalho">
+      <h1 class="Titulo">BitZone</h1>
+      <a class="menu">Inicio</a>
+    </header>
+    <div id="conteudo">
       <p id="protexto"></p>
       <p id="IAtexto"></p>
       <p id="bigdatatexto"></p>
       <p id="segurançatexto"></p>
-      <img id="proimg" src="" alt="">
-      <img id="IAimg" src="" alt="">
-      <img id="bigdataimg" src="" alt="">
-      <img id="segurançaimg"  src="" alt="">  
+      <img id="proimg" src="" alt="" />
+      <img id="IAimg" src="" alt="" />
+      <img id="bigdataimg" src="" alt="" />
+      <img id="segurançaimg" src="" alt="" />
     </div>
 
+    <div class="imagens">
+      <img class="imagem1" src="" alt="" />
+      <img class="imagem2" src="" alt="" />
+      <img class="imagem3" src="" alt="" />
+      <img class="imagem4" src="" alt="" />
+    </div>
 
+    <div class="caracteres">
+      <p class="caractere1"></p>
+      <p class="caractere2"></p>
+      <p class="caractere3"></p>
+      <p class="caractere4"></p>
+    </div>
 
-<div class="imagens">
-    <img class="imagem1" src="" alt="">
-<img class="imagem2" src="" alt="">
-<img class="imagem3" src="" alt="">
-<img class="imagem4" src="" alt="">
+    <div class="textosMenu">
+      <p class="textoMenu"></p>
+      <p class="textoMenu2"></p>
+      <p class="textoMenu3"></p>
+      <p class="textoMenu4"></p>
+    </div>
 
-</div>
+    <div class="visualizações">
+      <p class="vi"></p>
+    </div>
 
-<div class="caracteres">
-    <p class="caractere1"></p>
-    <p class="caractere2"></p>
-    <p class="caractere3"></p>
-    <p class="caractere4"></p>
-</div>
+    <div class="v1">
+      <p class="visu2"></p>
+    </div>
 
+    <div class="categorias">
+      <p class="categoria1"></p>
+      <p class="categoria2"></p>
+      <p class="categoria3"></p>
+      <p class="categoria4"></p>
+    </div>
 
-<div class="textosMenu">
-    <p class="textoMenu"></p>
-    <p class="textoMenu2"></p>
-    <p class="textoMenu3"></p>
-    <p class="textoMenu4"></p>
-</div>
+    <div class="datas">
+      <p id="dat2"></p>
+    </div>
 
-<div>
-<p class="vi"></p>
-</div>
+    <div class="d1">
+      <p id="dat1"></p>
+    </div>
 
+    <div class="d2">
+      <p id="dat3"></p>
+    </div>
 
+    <div class="d3">
+      <p id="dat4"></p>
+    </div>
 
-<div class="v1">
-    <p class="visu2"></p>
-</div>
+    <div class="d4">
+      <p id="dat5"></p>
+    </div>
 
-
-
-
-<div class="categorias">
-    <p class="categoria1"></p>
-    <p class="categoria2"></p>
-    <p class="categoria3"></p>
-    <p class="categoria4"></p>
-</div>
-
-      <div class="datas">
-    <p id="dat2"></p>  
-     </div>
-
-
-
-
-     <div class="d1">
-    <p id="dat1"></p>
-</div>
-    
-<div class="d2">
-<p id="dat3"></p>
-</div>
-
-<div class="d3">
-<p id="dat4"></p>
-</div>
-
-<div class="d4">
-<p id="dat5"></p>
-</div>
-    
     <div class="caracPro">
-        <p id="cp"></p>
-        
-        
+      <p id="cp"></p>
     </div>
 
-<div class="caracIA">
-    <p id="ci"></p>
-</div>
+    <div class="caracIA">
+      <p id="ci"></p>
+    </div>
 
-<div class="caracBd">
-<p id="cb"></p>
-</div>    
+    <div class="caracBd">
+      <p id="cb"></p>
+    </div>
 
-<div class="caracSi">
-        <p id="cs"></p>
+    <div class="caracSi">
+      <p id="cs"></p>
     </div>
 
     <div class="views">
-        <p id="contagem"></p>
-        
+      <p id="contagem"></p>
     </div>
 
-<div class="views2">
-    <p id="contagem2"></p>
-</div>
+    <div class="views2">
+      <p id="contagem2"></p>
+    </div>
 
-<div class="views3">
-    <p id="contagem3"></p>
-</div>
+    <div class="views3">
+      <p id="contagem3"></p>
+    </div>
 
-<div class="views4">
-    <p id="contagem4"></p>
-</div>
+    <div class="views4">
+      <p id="contagem4"></p>
+    </div>
 
-<div>
-    <p class="visualização1"></p>
-    <p class="visualização2"></p>
-    <p class="visualização3"></p>
-    <p class="visualização4"></p>
-</div>
+    <div>
+      <p class="visualização1"></p>
+      <p class="visualização2"></p>
+      <p class="visualização3"></p>
+      <p class="visualização4"></p>
+    </div>
 
-
-      <footer class="rodapé"><p class="textofinal">©BITZONE-2023</p></footer>
-      <script src="página2.js"></script>
-    </body>
+    <footer class="rodapé"><p class="textofinal">©BITZONE-2023</p></footer>
+    <script src="página2.js"></script>
+  </body>
 </html>
